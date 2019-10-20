@@ -12,11 +12,19 @@ body {
 .details {
   color: #362a2f;
   font-family: 'Anton', sans-serif;
-  font-weight: bold;
+  font-weight: 100;
   border: solid #d4d6b0 5px;
+  background: #d4d6b0;
+  border-radius: 25px;
   padding-left: 15px;
   padding-right: 25px;
-  margin-top: -5px
+  margin-top: -5px;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 .subhead {
@@ -29,20 +37,27 @@ body {
   display: block;
 }
 
+.subtext {
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
+  color: #d4d6b0;
+  display: block;
+}
+
 .link-heading {
   display: block;
   font-size: 12px;
 }
 
 a:hover {
-  color:#d4d6b0;
+  color:#76998a;
 }
 a:visited:hover {
-  color: #362a2f ;
+  color: #b39486;
 }
 
 a:visited {
-  color: #d4d6b0;
+  color: #362a2f;
 }
 
 .square-one .inner {
