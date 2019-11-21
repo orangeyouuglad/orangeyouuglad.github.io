@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e8d8b4;
+}
+
+.banner {
+    height: 300px;
+    display: flex;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(232,216,180,1)), url(images/repeat_texture01.png) center repeat-x;
+}
+
+.landing {
+    color: #261c13;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.landingContent {
+    font-family: 'Josefin slab', serif;
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 7px solid #261c13;
+}
+
+.landing h2 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.landing p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 20px;
+    margin: 5px 0 20px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.bannerButton {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 20px;
+    transition: text-shadow 1s;
+    cursor: pointer;
+}
+
+.bannerButton:hover {
+    text-shadow: 0 0 10px;
+}
+
+
+.arrow {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/*Form Styling Below*/
+
+.form {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    background: #e8d8b4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #261c13;
+    border-radius: 5px;
+    box-shadow: 0 20px 50px #261c13;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+
+.signup {
+    width: 50%;
+    background: #261c13;
+    padding: 120px 50px;
+    
+}
+
+
+.signup p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 18px;
+    color: #e8d8b4;
+    margin: 5px 0 20px 0;
+}
+
+.signup label {
+    color: #e8d8b4;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.signup input[type="checkbox"] {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 15px;
+    background: #e8d8b4;
+    outline: none;
+    border-radius: 20px;
+    margin: 0 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4);
+    transition: background-color .5s;
+}
+
+.signup input[type="checkbox"]::before { /*not sure what 'before' does*/
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: #261c13;
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    top: -1px;
+    left: -4px;
+    box-shadow: 0 2 5px rgba(230, 229, 229, 0.4);
+    transition: left .5s;
+}
+.signup input:checked[type="checkbox"]::before {
+    left: 18px;
+   }
+
+.signup input:checked[type="checkbox"] {
+    background: #cc683c;
+}
+
+.signup button {
+    display: block;
+    margin-top: 25px;
+    width: 150px;
+    padding: 8px 5px;
+    background: transparent;
+    color: #e8d8b4;
+    border: 2px solid #e8d8b4;
+    border-radius: 50px;
+    outline: none;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+    transition: .5s;
+}
+
+.signup button:hover {
+    color: #aa5733;
+    border: 2px solid #aa5733;
+    border-radius: 50px;
+}
+
+.formInput {
+    width: 250px;
+    font-family: 'Josefin slab', serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin: 25px 0;
+    background: #e8d8b4;
+    border-radius: 5px;
+}
+
+
+.header {
+    position: relative;
+    width: 50%;
+    background: url(images/plant02.png) center no-repeat;
+    background: cover;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header h1 {
+    font-family: 'Josefin slab', serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 15px;
+    border-bottom: 2px solid #261c13;
+
+}
+
+.header p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin: 15px;
+}
+
+.xButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #261c13;
+    cursor: pointer;
+}
+
+.formInput {
+    font-family: 'Josefin slab', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #261c13;
+    transition: background 1s;
+}
+
+
+.formInput:focus {
+    background: #aa5733;
+}
